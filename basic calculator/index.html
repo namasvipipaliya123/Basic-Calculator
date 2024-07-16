@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class= "formstyle">  
+    <form name = "form1">  
+    </form>  
+    <p class="textview" id="display"></p>
+    <input class="btn" type="button" value="1" onclick="document.getElementById('display').innerHTML +=1">
+    <input class="btn" type="button" value="2" onclick="document.getElementById('display').innerHTML +=2">
+    <input class="btn" type="button" value="3" onclick="document.getElementById('display').innerHTML +=3">
+    <input class="btn" type="button" value="+" onclick="document.getElementById('display').innerHTML +='+'">
+    <br>
+    <input class="btn" type="button" value="4" onclick="document.getElementById('display').innerHTML +=4">
+    <input class="btn" type="button" value="5" onclick="document.getElementById('display').innerHTML +=5">
+    <input class="btn" type="button" value="6" onclick="document.getElementById('display').innerHTML +=6">
+    <input class="btn" type="button" value="-" onclick="document.getElementById('display').innerHTML +='-'">
+    <br>
+    <input class="btn" type="button" value="7" onclick="document.getElementById('display').innerHTML +=7">
+    <input class="btn" type="button" value="8" onclick="document.getElementById('display').innerHTML +=8">
+    <input class="btn" type="button" value="9" onclick="document.getElementById('display').innerHTML +=9">
+    <input class="btn" type="button" value="*" onclick="document.getElementById('display').innerHTML +='*'">
+    <br>
+    <input class="btn" type="button" value="/" onclick="document.getElementById('display').innerHTML +='/'">
+    <input class="btn" type="button" value="0" onclick="document.getElementById('display').innerHTML +='0'">
+    <input class="btn" type="button" value="=" onclick="document.getElementById('display').innerHTML =eval(document.getElementById('display').innerHTML)">
+    <input class="btn" type="button" value="CA" onclick="document.getElementById('display').innerHTML =''">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
